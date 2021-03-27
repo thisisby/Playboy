@@ -1,0 +1,27 @@
+*{
+  box-sizing: border-box;
+  outline: none;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: 'Quicksand', sans-serif;
+  color: #333333;
+}
+a{
+  color: #333333;
+  transition: .3 ease-in-out;
+  text-decoration: none;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+img{
+  width: 100%;
+}

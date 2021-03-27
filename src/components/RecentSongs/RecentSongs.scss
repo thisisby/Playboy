@@ -1,0 +1,35 @@
+.recent-songs{
+    margin-left: 200px;
+    padding: 30px;
+    display: block;
+    position: relative;
+
+    .recent-songs-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        .recent-header-items{
+            display: grid;
+            grid-template-columns: repeat(4, max-content);
+            align-items: center;
+            column-gap: 20px;
+
+            span{
+                color: #333333;
+                font-weight: bold;
+                font-family: 'Baloo 2', cursive;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .recent-collection{
+        display: block;
+        border: 1px solid #d8f5f1;
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+}

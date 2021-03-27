@@ -1,0 +1,27 @@
+.content{
+    margin-left: 200px;
+    padding: 30px;
+    display: block;
+    position: relative;
+
+    .content-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        .content-header-items{
+            display: grid;
+            grid-template-columns: repeat(4, max-content);
+            align-items: center;
+            column-gap: 20px;
+
+            span{
+                color: #333333;
+                font-weight: bold;
+                font-family: 'Baloo 2', cursive;
+                font-size: 18px;
+            }
+        }
+    }
+}
