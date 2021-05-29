@@ -1,25 +1,23 @@
-import React, {useState, useRef} from 'react'
-import './App.scss';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import React, { useState, useRef } from "react";
+import "./App.scss";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // data
-import chillhop from './data'
+import chillhop from "./data";
 
 // Components
-import Sidebar from './components/Sidebar/Sidebar';
-
+import Sidebar from "./components/Sidebar/Sidebar";
 
 //Pages
-import Home from './pages/Home'
-import Recent from './pages/Recent';
+import Home from "./pages/Home";
+import Recent from "./pages/Recent";
 
 function App() {
-
   //useStates
   const [songs, setSongs] = useState(chillhop());
   const [currentSong, setCurrentSong] = useState(songs[0]);
   const [recentSongs, setRecentSongs] = useState([]);
-  const [likeSong, setLikeSong] = useState()
+  const [likeSong, setLikeSong] = useState();
   const [isPlaying, setIsPlaying] = useState(false);
   const [songInfo, setSongInfo] = useState({
     currentTime: 0,
@@ -27,7 +25,6 @@ function App() {
     animationPercentage: 0,
   });
 
-  
   // useRef
   const audioRef = useRef(null);
 
@@ -36,7 +33,7 @@ function App() {
       <Router>
         <Sidebar />
         <Switch>
-          <Route path="/" exact >
+          <Route path="/" exact>
             <Home
               songs={songs}
               setSongs={setSongs}
@@ -53,7 +50,7 @@ function App() {
               setLikeSong={setLikeSong}
             />
           </Route>
-          <Route path="/recent" >
+          <Route path="/recent">
             <Recent
               songs={songs}
               setSongs={setSongs}
